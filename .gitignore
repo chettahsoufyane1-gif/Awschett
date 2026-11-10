@@ -1,0 +1,30 @@
+# الاعتماديات
+node_modules/
+.pnp
+.pnp.js
+
+# بناء Next.js
+.next/
+out/
+build/
+dist/
+
+# الأسرار — ممنوع رفعها إطلاقًا
+.env
+.env.*
+!.env.example
+
+# سجلات
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# أدوات
+.DS_Store
+*.pem
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+.idea/
+.vscode/

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 85% -10%, rgba(34, 211, 238, 0.12), transparent 60%),
+    radial-gradient(1000px 500px at 5% 0%, rgba(168, 85, 247, 0.14), transparent 55%),
+    #070a17;
+  min-height: 100vh;
+}
+
+/* شرائط تمرير رقيقة تليق بالثيم الداكن */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* اتجاه النص داخل كتل JSON (تبقى LTR كما هي) */
+.ltr-code {
+  direction: ltr;
+  text-align: left;
+}
